@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import index, about, contact ,create_story
+from app.views import index, about, contact ,create_story,recipes,single,stories,user_profile,email_subscribers
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +23,9 @@ urlpatterns = [
     path('about/', about ),
     path('contact/', contact ),
     path('create-story/', create_story ),
+    path('recipes/', recipes ), 
+    path('single/',single),
+    path('stories/',stories),
+    path('user-profile/',user_profile),
+    path('email-subscribers/',email_subscribers)
 ]

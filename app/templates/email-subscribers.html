@@ -1,9 +1,8 @@
-<html>
+{% extends 'base.html' %}
+{% load static %}
 
-<head>
-    <title> Stoies daily digest </title>
-
-<body>
+{% block title %} Email Subscribers {% endblock %}
+{% block content %}
 <div
         style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0">
     <div class="m_-3996558079662894338email-fillWidth m_-3996558079662894338email-backgroundWhite m_-3996558079662894338js-emailHeader"
@@ -210,5 +209,4 @@
         </tbody>
     </table>
 </div>
-</body>
-</html>
+{% endblock %}
