@@ -9,3 +9,6 @@ def about(request):
 
 def contact(request):
     return render(request , 'contact.html' )
+    
+def create_story(request):
+    return render(request, 'create_story.html' )

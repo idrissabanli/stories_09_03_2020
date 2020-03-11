@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app.views import index, about, contact
+from app.views import index, about, contact ,create_story
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index ),
     path('about/', about ),
     path('contact/', contact ),
+    path('create-story/', create_story ),
 ]
