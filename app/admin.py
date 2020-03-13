@@ -1,3 +1,11 @@
 from django.contrib import admin
+from app.models import Story
 
-# Register your models here.
+admin.site.register(Story)
+
+# append Other Models
+# Recipe
+# Author
+# Category
+# Comment
+# Comment reply
